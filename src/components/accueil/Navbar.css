@@ -1,0 +1,163 @@
+.header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8); 
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.header.stinky-bar-active {
+    background-color: rgba(255, 255, 255, 1); 
+}
+
+.hidden {
+    display: none;
+}
+
+.nav-bar {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 1% 15%;
+    color: #fff;
+    margin:auto;
+}
+
+.header.stinky-bar-active .nav-bar {
+    color: #000; 
+}
+
+
+.nav-bar-part-two {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin:auto;
+    padding:0;
+}
+
+.nav-bar-part-one{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin:auto;
+    padding:0;
+}
+
+.nav-bar-part-one li,
+.nav-bar-part-two li {
+    cursor: pointer;
+    font-size: 13.5px;
+    font-family: system-ui;
+    font-weight: 600;
+}
+
+.nav-bar-title {
+    display:grid;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 32px;
+    color: #ffffff;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+.menu-icon {
+    display:none;
+}
+.header.stinky-bar-active .nav-bar-title {
+    color: #000;
+}
+
+@media screen and (max-width: 1200px) {
+    .header {
+        position: relative;
+        background-color: transparent; /* Remove background */
+        padding: 20px 0; /* Increase space between content and top */
+    }
+
+    .header.stinky-bar-active {
+        background-color: transparent; /* Keep background transparent when sticky */
+    }
+
+    .nav-bar {
+        padding: 0 15%; /* Remove top/bottom padding */
+        color: #fff;
+        display: flex; /* Apply grid layout */
+        align-items: center;
+    }
+
+    .nav-bar-title {
+        font-size: 35px;
+        margin-top: 10px;
+        font-weight: 450; /* Add spacing from the top */
+    }
+
+    .nav-bar-part-one,
+    .nav-bar-part-two {
+        display: none; /* Hide the menu items */
+        flex-direction: column;
+        background-color: #fff;
+        font-size: 13.5px;
+        color:#000;
+        font-family: system-ui;
+        font-weight: 600; 
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 20px;
+    }
+
+    .nav-bar-part-one.active li,
+    .nav-bar-part-two.active li {
+        font-size:14px;
+    }
+
+    .nav-bar-part-one.active li:hover,
+    .nav-bar-part-two.active li:hover {
+        color:grey;
+        font-weight:600;
+        font-size:13px;
+    }
+    .nav-bar-part-one.active {
+        display: flex; 
+        top: 100%;
+    }
+    .nav-bar-part-two.active {
+        display: flex; /* Show the menu items when active */
+        top: 200%;
+    }
+
+    .menu-icon {
+        display: block;
+        margin-top: 10px;
+        position: absolute;
+        right: 10px;
+        font-size: 27px;
+        font-weight: 100;
+    }
+}
+@media screen and (max-width: 770px) {
+    .nav-bar-title {
+        font-size: 35px;
+        margin-top: 10px;
+        font-weight: 450;
+    }
+    .nav-bar {
+        padding: 0 0 0 5%; /* Remove top/bottom padding */
+        color: #fff;
+        display: flex; /* Apply grid layout */
+        justify-content: flex-start
+    }
+    .menu-icon {
+        display: block;
+        margin-top: 10px;
+        position: absolute;
+        right: 40px;
+        font-size: 27px;
+        font-weight: 100;
+    }
+}
