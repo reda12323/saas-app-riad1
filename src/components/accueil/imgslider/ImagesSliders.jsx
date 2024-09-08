@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import img1 from '../image/first-page.jpg';
 import ImageSlider from './ImageSlider';
+import './ImagesSliders.css'
 
 const ImagesSliders = () => {
   const slides = [

@@ -8,7 +8,7 @@ import Footer from '../footer/Footer';
 
 const Accueil = () => {
     return (
-        <div>
+        <div style={{overflowX: "hidden"}}>
             <div className="">
                 <Infobar/>
                 <Slider/>
