@@ -3,14 +3,22 @@ import Infobar from './Infobar';
 
 import './Accueil.css';
 import Slider from '../slider/Slider';
+import MainPage from './MainPage';
+import Footer from '../footer/Footer';
 
 const Accueil = () => {
     return (
-        <div className="accueil-container">
-            <Infobar/>
-            
-            <Slider/>
-            
+        <div>
+            <div className="">
+                <Infobar/>
+                <Slider/>
+            </div>
+            <div>
+                <MainPage/>
+            </div>
+            <div>
+                <Footer/>
+            </div>
         </div>
     );
 };

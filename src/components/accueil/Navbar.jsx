@@ -6,7 +6,7 @@ const Navbar = () => {
     const [menuActive, setMenuActive] = useState(false);
 
     const handleScroll = () => {
-        setStinkyBarActive(window.scrollY > 30);
+        setStinkyBarActive(window.scrollY > 0);
     };
 
     const toggleMenu = () => {
