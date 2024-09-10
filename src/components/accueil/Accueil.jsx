@@ -1,6 +1,4 @@
-import Infobar from './Infobar';
-// import Navbar from './Navbar';
-
+import Infobar from '../sitebar/Infobar';
 import './Accueil.css';
 import Slider from '../slider/Slider';
 import MainPage from './MainPage';

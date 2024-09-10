@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Navbar from '../accueil/Navbar';
+import Navbar from '../sitebar/Navbar';
 import './Slider.css';
 
 const Slider = () => {

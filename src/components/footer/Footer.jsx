@@ -4,7 +4,7 @@ import { FaFacebookF, FaTwitter, FaFlickr, FaLinkedinIn } from 'react-icons/fa';
 const Footer = () => {
     return (
         <div className="footer-first-main">
-            <div className="social-icons">
+            <div className="footer-social-icons">
                 <ul>
                     <li>
                         <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
@@ -34,7 +34,7 @@ const Footer = () => {
             </div>
             <div className='footer-line-cut'></div>
             <div className='footer-of-footer'>
-                © Copyright 2023 Villa marrakech By BillyStays.
+                © Copyright 2024 Riad Romana marrakech By BillyStays.
             </div>
         </div>
     );
