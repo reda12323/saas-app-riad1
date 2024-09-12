@@ -1,0 +1,60 @@
+.name-of-page-rm{
+    width:100%;
+    color: #fff;
+    position: absolute;
+    left: 40%;
+    top: 250px;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: cursive;
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 1250px) {
+    .name-of-page-rm{
+        width:100%;
+        color: #fff;
+        position: absolute;
+        left: 37%;
+        top: 250px;
+        font-size: 30px;
+        font-weight: 500;
+        font-family: cursive;
+    }
+}
+@media screen and (max-width: 980px) {
+    .name-of-page-rm{
+        width:100%;
+        color: #fff;
+        position: absolute;
+        left: 32%;
+        top: 250px;
+        font-size: 30px;
+        font-weight: 500;
+        font-family: cursive;
+    }
+}
+@media screen and (max-width: 635px) {
+    .name-of-page-rm{
+        width:100%;
+        color: #fff;
+        position: absolute;
+        left: 25%;
+        top: 250px;
+        font-size: 30px;
+        font-weight: 500;
+        font-family: cursive;
+    }
+}
+@media screen and (max-width: 500px) {
+    .name-of-page-rm{
+        width:100%;
+        color: #fff;
+        position: absolute;
+        left: 20%;
+        top: 250px;
+        font-size: 30px;
+        font-weight: 500;
+        font-family: cursive;
+    }
+}

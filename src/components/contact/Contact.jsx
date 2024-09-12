@@ -4,9 +4,9 @@ import riad from './image/riad.jpg';
 import MainPage from "./MainPage";
 import Footer from '../footer/Footer';
 
-const Riad = () => {
+const Contact = () => {
     return (
-         <div style={{overflowX: "hidden"}}>
+        <div style={{overflowX: "hidden"}}>
             <div style={{margin:"auto",paddingBottom:"60px"}}>
                 <Infobar/>
                 <div
@@ -25,4 +25,4 @@ const Riad = () => {
     );
 }
  
-export default Riad;
+export default Contact;

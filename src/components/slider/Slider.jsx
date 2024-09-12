@@ -31,7 +31,7 @@ const Slider = () => {
         <div className="slider">
             <div
                 className="slider-background"
-                style={{ backgroundImage: `url(${images[currentIndex]})`,backgroundSize: "cover" }}
+                style={{ backgroundImage: `url(${images[currentIndex]})`,backgroundSize: "cover", }}
             >
                 <Navbar />
             </div>

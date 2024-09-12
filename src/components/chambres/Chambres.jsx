@@ -1,17 +1,18 @@
 import Infobar from "../sitebar/Infobar";
 import Navbar from "../sitebar/Navbar";
-import riad from './image/riad.jpg';
 import MainPage from "./MainPage";
 import Footer from '../footer/Footer';
+import './Chambres.css'
 
-const Riad = () => {
+const Chambres = () => {
     return (
-         <div style={{overflowX: "hidden"}}>
+        <div style={{overflowX: "hidden"}}>
             <div style={{margin:"auto",paddingBottom:"60px"}}>
                 <Infobar/>
                 <div
-                style={{ backgroundImage: `url(${riad})`,backgroundSize: "cover",width:"100%",height: "500px", }}
+                style={{ backgroundImage: 'url(https://darchadia.com/wp-content/uploads/2022/06/20220618_105811-1-scaled.jpg)',backgroundSize: "cover",backgroundPosition: 'center',width:"100%",height: "500px", }}
                 >
+                    <span className="name-of-page-ch">chambres</span>
                     <Navbar />
                 </div>
             </div>
@@ -25,4 +26,4 @@ const Riad = () => {
     );
 }
  
-export default Riad;
+export default Chambres;

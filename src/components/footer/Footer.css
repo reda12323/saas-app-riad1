@@ -66,8 +66,13 @@
 
 /* Responsive styles */
 @media (max-width: 770px) {
-    .footer-social-icons .icon {
+    .footer-social-icons .icon-name {
         display: none;
+    }
+    .footer-social-icons a {
+        text-decoration: none;
+        margin-bottom:20px;
+        margin-top:20px;
     }
     .footer-social-icons ul {
         gap:15px;

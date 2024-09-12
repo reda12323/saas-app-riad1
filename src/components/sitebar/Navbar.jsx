@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { NavLink } from 'react-router-dom'; // Import NavLink
 import './Navbar.css';
 
 const Navbar = () => {
@@ -22,21 +23,83 @@ const Navbar = () => {
         <div className={`header ${stinkyBarActive ? 'stinky-bar-active' : ''}`}>
             <div className="nav-bar">
                 <ul className={`nav-bar-part-one ${menuActive ? 'active' : ''}`}>
-                    <li>ACCUEIL</li>
-                    <li>LA VILLA</li>
-                    <li>LA GALERIE</li>
+                    <li>
+                        <NavLink
+                            className='Link'
+                            to="/"
+                            style={({ isActive }) => ({
+                                opacity: isActive ? '0.5' : '1',
+                            })}
+                        >
+                            ACCUEIL
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            className='Link'
+                            to="/riad"
+                            style={({ isActive }) => ({
+                                opacity: isActive ? '0.5' : '1',
+                            })}
+                        >
+                            LE RIAD
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            className='Link'
+                            to="/galerie"
+                            style={({ isActive }) => ({
+                                opacity: isActive ? '0.5' : '1',
+                            })}
+                        >
+                            GALERIE
+                        </NavLink>
+                    </li>
                 </ul>
-                <span className="nav-bar-title">
-                    <span>Riad</span>
-                    <span>ROMANA</span>
-                </span>
+                <NavLink className='Link-title' to="/">
+                    <span className="nav-bar-title">
+                        <span>Riad</span>
+                        <span>ROMANA</span>
+                    </span>
+                </NavLink>
                 <ul className={`nav-bar-part-two ${menuActive ? 'active' : ''}`}>
-                    <li>LES SERVICES</li>
-                    <li>CONTACT</li>
-                    <li>ACTUALITÉS</li>
+                    <li>
+                        <NavLink
+                            className='Link'
+                            to="/chambres"
+                            style={({ isActive }) => ({
+                                opacity: isActive ? '0.5' : '1',
+                            })}
+                        >
+                            CHAMBRES
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            className='Link'
+                            to="/contact"
+                            style={({ isActive }) => ({
+                                opacity: isActive ? '0.5' : '1',
+                            })}
+                        >
+                            CONTACT
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            className='Link'
+                            to="/tarifs"
+                            style={({ isActive }) => ({
+                                opacity: isActive ? '0.5' : '1',
+                            })}
+                        >
+                            TARIFS
+                        </NavLink>
+                    </li>
                 </ul>
                 <div className="menu-icon" onClick={toggleMenu}>
-                    {menuActive ? '✖' : '☰'} {/* Toggle between hamburger and X icons */}
+                    {menuActive ? '✖' : '☰'}
                 </div>
             </div>
         </div>
