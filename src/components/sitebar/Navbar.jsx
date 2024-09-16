@@ -78,23 +78,23 @@ const Navbar = () => {
                     <li>
                         <NavLink
                             className='Link'
-                            to="/contact"
-                            style={({ isActive }) => ({
-                                opacity: isActive ? '0.5' : '1',
-                            })}
-                        >
-                            CONTACT
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink
-                            className='Link'
                             to="/tarifs"
                             style={({ isActive }) => ({
                                 opacity: isActive ? '0.5' : '1',
                             })}
                         >
                             TARIFS
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            className='Link'
+                            to="/contact"
+                            style={({ isActive }) => ({
+                                opacity: isActive ? '0.5' : '1',
+                            })}
+                        >
+                            CONTACT
                         </NavLink>
                     </li>
                 </ul>

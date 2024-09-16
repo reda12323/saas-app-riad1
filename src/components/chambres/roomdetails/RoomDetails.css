@@ -1,5 +1,5 @@
 .name-of-page-rm{
-    width:100%;
+    width:50%;
     color: #fff;
     position: absolute;
     left: 40%;
@@ -12,7 +12,7 @@
 
 @media screen and (max-width: 1250px) {
     .name-of-page-rm{
-        width:100%;
+        width:50%;
         color: #fff;
         position: absolute;
         left: 37%;
@@ -24,7 +24,7 @@
 }
 @media screen and (max-width: 980px) {
     .name-of-page-rm{
-        width:100%;
+        width:50%;
         color: #fff;
         position: absolute;
         left: 32%;
@@ -36,7 +36,7 @@
 }
 @media screen and (max-width: 635px) {
     .name-of-page-rm{
-        width:100%;
+        width:50%;
         color: #fff;
         position: absolute;
         left: 25%;
@@ -48,7 +48,7 @@
 }
 @media screen and (max-width: 500px) {
     .name-of-page-rm{
-        width:100%;
+        width:50%;
         color: #fff;
         position: absolute;
         left: 20%;

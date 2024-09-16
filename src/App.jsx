@@ -8,6 +8,7 @@ import Galerie from './components/galerie/Galerie';
 import Contact from './components/contact/Contact';
 import Tarifs from './components/tarifs/Tarifs';
 import RoomDetails from './components/chambres/roomdetails/RoomDetails';
+import Reserver from './components/reserver/Reserver';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/galerie" element={<Galerie />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/tarifs" element={<Tarifs />} />
+          <Route path="/reserver" element={<Reserver />} />
           <Route path="*" element={<NotFound />} />
           <Route path="/details/:roomName" element={<RoomDetails />} />
         </Routes>

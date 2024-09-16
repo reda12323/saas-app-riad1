@@ -1,5 +1,5 @@
 .name-of-page-ch{
-    width:100%;
+    width:50%;
     color: #fff;
     position: absolute;
     left: 45%;
@@ -11,7 +11,7 @@
 }
 @media screen and (max-width: 1250px) {
     .name-of-page-ch{
-        width:100%;
+        width:50%;
         color: #fff;
         position: absolute;
         left: 44%;
@@ -23,7 +23,7 @@
 }
 @media screen and (max-width: 980px) {
     .name-of-page-ch{
-        width:100%;
+        width:50%;
         color: #fff;
         position: absolute;
         left: 42%;
@@ -35,7 +35,7 @@
 }
 @media screen and (max-width: 635px) {
     .name-of-page-ch{
-        width:100%;
+        width:50%;
         color: #fff;
         position: absolute;
         left: 35%;

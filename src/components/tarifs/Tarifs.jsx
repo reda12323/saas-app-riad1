@@ -10,7 +10,7 @@ const Tarifs = () => {
             <div style={{margin:"auto",paddingBottom:"60px"}}>
                 <Infobar/>
                 <div
-                style={{ backgroundImage: `url(${riad})`,backgroundSize: "cover",width:"100%",height: "500px", }}
+                style={{ backgroundImage: 'url(https://darchadia.com/wp-content/uploads/2022/06/20220618_111815-scaled.jpg)',backgroundSize: "cover",backgroundPosition: 'top',width:"100%",height: "500px",  }}
                 >
                     <Navbar />
                 </div>
