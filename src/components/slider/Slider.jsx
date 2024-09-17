@@ -4,9 +4,9 @@ import './Slider.css';
 
 const Slider = () => {
     const images = [
-        'https://riadmarrakech.net/wp-content/uploads/2024/08/image-5.jpeg.webp', 
-        'https://t4.ftcdn.net/jpg/05/55/98/93/360_F_555989302_UccbXgClldzfyHmTjYO1zY1wxCo2RGbe.jpg',
-        'https://c1.wallpaperflare.com/preview/110/27/758/morocco-hotel-indoor-pool.jpg',
+        'https://darchadia.com/wp-content/uploads/2022/06/20220618_111710v2-scaled.jpg', 
+        'https://darchadia.com/wp-content/uploads/2022/06/20220618_105811-1024x768.jpg',
+        'https://darchadia.com/wp-content/uploads/2022/06/20220618_110349-1024x768.jpg',
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);

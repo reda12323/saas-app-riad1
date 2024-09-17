@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './MainPage.css'
 import img1 from './image/first-page.jpg'
 import ImagesSliders from './imgslider/ImagesSliders';
@@ -31,9 +32,11 @@ const MainPage = () => {
                 <div className='part-main-2-div'>
                     <img className='img1' src={img1} alt="First Page" />
                     <div className='part-main-3-div' >
-                        <button>
-                        <i className="vc_btn3-icon fas fa-calendar-check"></i> Réserver maintenant
-                        </button>
+                        <Link to="/reserver">
+                            <button>
+                                <i className="vc_btn3-icon fas fa-calendar-check"></i> Réserver maintenant
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>

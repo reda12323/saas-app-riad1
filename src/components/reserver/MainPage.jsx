@@ -1,6 +1,19 @@
+import { useState } from 'react';
+
 import './MainPage.css';
 
 const MainPage = () => {
+    const [showDateInput, setShowDateInput] = useState({
+        arrival: false,
+        departure: false
+    });
+
+    const handleFocus = (field) => {
+        setShowDateInput({
+            ...showDateInput,
+            [field]: true
+        });
+    };
     return (
         <div className='complete-page-main'>
             <div className="rs-big-part">
@@ -22,8 +35,12 @@ const MainPage = () => {
                                 <input type="text" name="" placeholder='Votre Téléphone' id="" />
                             </div>
                             <div className='first-part-form-rs'>
-                                <input type="text" name="" placeholder="Date d'arrivée" id="input1" />
-                                <input type="text" name="" placeholder="Date de départ" id="" />
+                                <input type={showDateInput.arrival ? 'date' : 'text'} 
+                                    placeholder="Date d'arrivée" 
+                                    onFocus={() => handleFocus('arrival')} id="input1" />
+                                <input type={showDateInput.departure ? 'date' : 'text'} 
+                                    placeholder="Date de départ" 
+                                    onFocus={() => handleFocus('departure')} id="" />
                             </div>
                             <div className='first-part-two-rs'>
                                 <textarea placeholder='Message' name="" id=""></textarea>

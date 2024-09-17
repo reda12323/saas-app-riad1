@@ -1,0 +1,47 @@
+.name-of-page-ch{
+    width:50%   ;
+    color: #fff;
+    position: absolute;
+    left: 45%;
+    top: 250px;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: cursive;
+    text-transform: capitalize;
+}
+@media screen and (max-width: 1250px) {
+    .name-of-page-ch{
+        width:50%;
+        color: #fff;
+        position: absolute;
+        left: 44%;
+        top: 250px;
+        font-size: 30px;
+        font-weight: 500;
+        font-family: cursive;
+    }
+}
+@media screen and (max-width: 980px) {
+    .name-of-page-ch{
+        width:50%;
+        color: #fff;
+        position: absolute;
+        left: 42%;
+        top: 250px;
+        font-size: 30px;
+        font-weight: 500;
+        font-family: cursive;
+    }
+}
+@media screen and (max-width: 635px) {
+    .name-of-page-ch{
+        width:50%;
+        color: #fff;
+        position: absolute;
+        left: 35%;
+        top: 250px;
+        font-size: 30px;
+        font-weight: 500;
+        font-family: cursive;
+    }
+}

@@ -66,7 +66,7 @@ const MainPage = () => {
                     </div>
                 </div>
             </div>
-            <div className='button-first-div'>
+            <div className='ch-button-first-div'>
                     <ResButton/>
             </div>
         </div>
